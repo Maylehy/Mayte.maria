@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liderazgo Eficaz a través de las 5S</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffeef8; /* Fondo suave rosado */
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        }
+        h1 {
+            color: #ff2b8d; /* Color neón rosa */
+            font-style: italic; /* Texto en cursiva */
+            margin: 20px 0;
+            animation: bounce 2s infinite; /* Aplica la animación al título */
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        h2, h3 {
+            color: #ff2b8d; /* Color neón rosa */
+            font-style: italic; /* Texto en cursiva */
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        h2.visible, h3.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto; /* Centra el contenedor */
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            animation: fadeIn 1s ease; /* Animación de entrada */
+            text-align: center; /* Centra el texto dentro del contenedor */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            opacity: 0;
+            transform: scale(0.9) rotateY(180deg); /* Rotación inicial */
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            margin-bottom: 20px;
+            filter: brightness(0.9);
+        }
+        .image.visible {
+            opacity: 1;
+            transform: scale(1.05) rotateY(0deg); /* Rotación al aparecer */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            background-color: #ffccdc; /* Fondo suave para los elementos de la lista */
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 5px;
+            height: 80%;
+            background: #d5006d; /* Línea decorativa */
+            transform: translateY(-50%);
+            transition: background 0.3s ease;
+        }
+        li:hover {
+            transform: translateY(-5px) scale(1.02); /* Efecto de elevación al pasar el ratón */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        li:hover::before {
+            background: #ff6f91; /* Cambia el color de la línea decorativa al pasar el ratón */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        button {
+            background-color: #ff2b8d; /* Color del botón */
+            color: white; /* Color del texto */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #d5006d; /* Color del botón al pasar el ratón */
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Liderazgo Eficaz a través de las 5S</h1>
+
+        <h2>Introducción</h2>
+        <img src="https://media.tenor.com/inv_IC0z2rgAAAAj/cinnamoroll.gif" alt="Monito Bailando" style="width: 10%; border-radius: 8px; margin-top: 5px;" />
+        <p>El liderazgo en entornos laborales modernos requiere de metodologías que optimicen la productividad y fomenten un ambiente positivo. Las <strong>5S</strong>, originarias del enfoque japonés Kaizen, son una herramienta poderosa para alcanzar estos objetivos.</p>
+        
+        <button onclick="scrollToSection('seccion-5s')">¿Qué son las 5S?</button>
+        <button onclick="scrollToSection('beneficios')">Beneficios</button>
+        <button onclick="scrollToSection('caso-exito')">Caso de Éxito</button>
+        <button onclick="scrollToSection('conclusion')">Conclusión</button>
+
+        <h2 id="seccion-5s">¿Qué son las 5S?</h2>
+        <ul>
+            <li>
+                <h3>Seiri (Clasificación)</h3>
+                <p><strong>Descripción:</strong> Identificar y eliminar elementos innecesarios.</p>
+                <img src="https://th.bing.com/th/id/R.7f66d159a7579fb19110111f0ce735a5?rik=LDW1a%2fJ4iP4KXg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_fMjnXNzGML0%2fTAVw7Q9NJGI%2fAAAAAAAAABo%2fYe7sZaBNgbE%2fs1600%2f5SS.PNG&ehk=Ga3HZse5bNlSjoj5q9dy1EI51LAtSUTOAbvXQjzhwtQ%3d&risl=&pid=ImgRaw&r=0" alt="Clasificación" class="image" id="image1">
+            </li>
+            <li>
+                <h3>Seiton (Orden)</h3>
+                <p><strong>Descripción:</strong> Organizar los elementos necesarios para un fácil acceso.</p>
+                <img src="https://th.bing.com/th/id/R.89414f243b1db8cacccc5a428b35137e?rik=2kQuQGdMeCWR0A&riu=http%3a%2f%2fproikos.pe%2fwp-content%2fuploads%2f2015%2f11%2fcompromiso-011.png&ehk=vH%2fzWmNhhlBUciyJuH4qI342yS0Udl67JP7sgB63qTw%3d&risl=&pid=ImgRaw&r=0" alt="Orden" class="image" id="image2">
+            </li>
+            <li>
+                <h3>Seiso (Limpieza)</h3>
+                <p><strong>Descripción:</strong> Mantener el espacio limpio y en buenas condiciones.</p>
+                <img src="https://th.bing.com/th/id/OIP.ykw7PLsLoDl-77DS-icjkgHaEL?rs=1&pid=ImgDetMain" alt="Limpieza" class="image" id="image3">
+            </li>
+            <li>
+                <h3>Seiketsu (Estandarización)</h3>
+                <p><strong>Descripción:</strong> Crear y seguir estándares para mantener el orden y la limpieza.</p>
+                <img src="https://todoproyecto.files.wordpress.com/2020/10/las-5s-n.jpg" alt="Estandarización" class="image" id="image4">
+            </li>
+            <li>
+                <h3>Shitsuke (Disciplina)</h3>
+                <p><strong>Descripción:</strong> Fomentar la autodisciplina en el cumplimiento de normas.</p>
+                <img src="https://iso4docs.com/wp-content/uploads/2022/09/iso4-5s-1.jpg" alt="Disciplina" class="image" id="image5">
+            </li>
+        </ul>
+
+        <h2 id="beneficios">Beneficios de las 5S en el Liderazgo</h2>
+        <ul>
+            <li>Aumenta la Productividad.</li>
+            <li>Mejora la Comunicación.</li>
+            <li>Incrementa la Moral del Empleado.</li>
+            <li>Reduce el Desperdicio.</li>
+        </ul>
+
+        <h2 id="caso-exito">Caso de Éxito: [Nombre de la Empresa]</h2>
+        <h3>Contexto</h3>
+        <p>Descripción breve de los desafíos que enfrentaba la empresa antes de implementar las 5S.</p>
+
+        <h3>Estrategia Implementada</h3>
+        <ul>
+            <li>Capacitación: Talleres sobre las 5S para todo el personal.</li>
+            <li>Roles Asignados: Designación de responsables para cada aspecto de las 5S.</li>
+        </ul>
+
+        <h3>Resultados Obtenidos</h3>
+        <ul>
+            <li>Eficiencia: Incremento del 30% en la eficiencia operativa.</li>
+            <li>Reducción de Tiempo: Disminución del tiempo de búsqueda de herramientas en un 50%.</li>
+            <li>Satisfacción: Mejora notable en la satisfacción del equipo.</li>
+        </ul>
+
+        <h2 id="conclusion">Conclusión</h2>
+        <p>Adoptar las 5S no solo transforma el espacio físico de trabajo, sino que también empodera a los líderes a fomentar una cultura de mejora continua y excelencia.</p>
+
+        <h2>Recursos Adicionales</h2>
+        <ul>
+            <li>Libros recomendados sobre las 5S y liderazgo.</li>
+            <li>Videos y artículos sobre la implementación efectiva de las 5S.</li>
+        </ul>
+
+        <footer>
+            <p>Contáctanos si deseas más información sobre cómo implementar las 5S en tu organización.</p>
+        </footer>
+
+        <h2>Video Adicional</h2>
+    
+    </div>
+
+    <script>
+        const colors = ['#ffeef8', '#add8e6', '#ffccdc', '#ffffe0', '#e0ffff']; // Colores que quieres usar
+        let currentIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length; // Cambia al siguiente color
+        }
+
+        // Cambia el color de fondo cada 3 segundos (3000 ms)
+        setInterval(changeBackgroundColor, 3000);
+
+        // Función para mostrar imágenes y encabezados con animación
+        function showElements() {
+            const headings = document.querySelectorAll('h1, h2, h3');
+            const images = document.querySelectorAll('.image');
+
+            headings.forEach((heading, index) => {
+                setTimeout(() => {
+                    heading.classList.add('visible');
+                }, index * 500); // Retardo entre encabezados
+            });
+
+            images.forEach((image, index) => {
+                setTimeout(() => {
+                    image.classList.add('visible');
+                }, (index + headings.length) * 500); // Retardo después de los encabezados
+            });
+        }
+
+        // Función para desplazarse a la sección
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Ejecuta la función al cargar la página
+        window.onload = showElements;
+    </script>
+</body>
+</html>
